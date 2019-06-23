@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    		<div id="nav">
+    		<div id="nav" :style="{'height': navHeight + 'px'}">
 			<div class="title">
 				CAROLYN YU
 			</div>
@@ -10,7 +10,9 @@
 				<div class="buttom"><a href="#">CV</a></div>
 			</div>
 		</div>
-    <router-view/>
+    <div class="router-content" :style="{'height': height}">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -28,6 +30,7 @@ body,
 html {
   padding: 0;
   margin: 0;
+  // height: 100%;
   /*		background: rgba( 100, 100, 100, 0.1);*/
 }
 
@@ -41,6 +44,7 @@ html {
 
 #nav {
   margin-top: 30px;
+  // height: 100%;
   // padding: 30px 0 0 0;
   // height: 100px;
   /*		background: rgba(255, 255, 255, 0.2);*/
@@ -67,7 +71,47 @@ html {
     padding: 15px 5%;
   }
 }
+
+  .router-content{
+    overflow: hidden;
+  }
+
 </style>
 
+<script lang="ts">
+import Vue from "vue";
+//import ProjectCell from '@/components/ProjectCell.vue'; // @ is an alias to /src
 
+export default Vue.extend({
+  name: "app",
+
+  data:function(){
+    return{
+      navHeight: 100, 
+      height: "auto",
+    }
+  },
+
+  created: function(){
+    window.addEventListener("resize", this.getHeight);
+  },
+
+  mounted: function(){
+    this.getHeight();
+    console.log("hi");
+  },
+
+  methods: {
+    getHeight :function() {
+      let navDOM: any = document.getElementById("nav");
+      let navHeight = navDOM.getBoundingClientRect().bottom;
+      let windowHeight = window.innerHeight;
+      console.log(navDOM.getBoundingClientRect(), navHeight, window.innerHeight);
+      this.height = windowHeight - navHeight + "px";
+    }
+
+  },
+
+});
+</script>
 

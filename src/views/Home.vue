@@ -48,7 +48,7 @@
 .home {
   display: flex;
   overflow: hidden;
-  // height: calc(100vh - 100px);
+  height: 100%;
   padding: 20px;
 
   .avatar {
@@ -56,6 +56,8 @@
     text-align: left;
     padding: 40px;
     border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+    height: 100%;
+    overflow: auto;
 
     img {
       width: 150px;
@@ -65,6 +67,7 @@
     flex: 3;
     text-align: left;
     padding: 40px;
+    height: 100%;
     overflow: auto;
 
     a {

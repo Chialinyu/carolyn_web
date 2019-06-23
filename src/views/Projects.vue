@@ -3,7 +3,7 @@
 		<h1>Projects</h1>
 
 		<div class="components">
-			<div class="component" v-for="project in [1, 2, 3, 4, 5, 6]"  v-bind:key="project"> 
+			<div class="component" v-for="project in length"  v-bind:key="project"> 
         <ProjectCell/> 
 			</div>
 		</div>
@@ -16,14 +16,8 @@
 	.project{
 		width: 80%;
 		margin: 0 auto;
-		height: calc(100vh - 100px);
-/*		overflow: hidden;*/
-
-/*
-		.components{
-			overflow: auto;
-		}
-*/
+		height: 100%;
+    overflow: auto;
 		
 		.component{
 			width: 40%;
@@ -45,8 +39,10 @@ export default Vue.extend({
   components: {
     ProjectCell,
   },
-  data:{
-    length: [1, 2, 3, 4, 5, 6],
+  data:function(){
+    return {
+      length: [1, 2, 3, 4, 5, 6],
+    }; 
   },
 });
 </script>
