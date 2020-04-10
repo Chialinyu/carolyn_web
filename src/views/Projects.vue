@@ -22,8 +22,9 @@
 		.component{
 			width: 40%;
 			display: inline-block;
-			padding: 6px;
-			background: url("../assets/cell_bg.png");
+			padding: 15px 8px;
+			// background: url("../assets/cell_bg.png");
+			// background-color: #ffffff;
 			background-size: cover;
 		}
 	}

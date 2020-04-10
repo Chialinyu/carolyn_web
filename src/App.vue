@@ -53,7 +53,8 @@ html {
     font-weight: bold;
     color: #868686;
     &.router-link-exact-active {
-      color: #ff8686;
+      // color: #ff8686;
+      color: #c89664;
     }
   }
 

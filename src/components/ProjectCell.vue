@@ -1,7 +1,8 @@
 <template>
 	<div class="cell">
-		<div>
-			<img src="../assets/bg.png">
+		<div class="coverimg">
+			<!-- <img src="../assets/bg.png"> -->
+			<img src="../assets/EyeBus.jpg">
 		</div>
 		<h3> Project Name </h3>
 		<p>
@@ -16,10 +17,16 @@
 	
 	.cell{
 		padding: 6px;
+		border-width: 0.5px; 
+		border-color: rgba(0, 0, 0, 0.2); 
+		border-style: solid;
 	}
 	
 	img{
 		width: 100%;
+		// height: 100%;
+		opacity: 0.5;
+		// background-color: #c89664;
 	}
 	
 	h3 {

@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "ssh -tt root@45.76.221.101 'sudo rm -r /var/www/html' && scp -r ./dist root@45.76.221.101:/var/www/html"  },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-material": "^1.0.0-beta-11",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
