@@ -99,7 +99,7 @@ export default Vue.extend({
 
   mounted: function(){
     this.getHeight();
-    console.log("hi");
+    // console.log("hi");
   },
 
   methods: {
