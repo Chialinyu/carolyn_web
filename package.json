@@ -6,21 +6,22 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "predeploy": "npm run build",
-    "deploy": "ssh -tt root@45.76.221.101 'sudo rm -r /var/www/html/carolyn' && scp -r ./dist root@45.76.221.101:/var/www/html/carolyn"
+    "deploy": "ssh -tt root@45.76.221.101 'sudo rm -r /var/www/html' && scp -r ./dist root@45.76.221.101:/var/www/html"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "core-js": "^2.6.11",
+    "vue": "^2.6.11",
+    "vue-material": "^1.0.0-beta-11",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-typescript": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
-    "sass": "^1.18.0",
-    "sass-loader": "^7.1.0",
-    "typescript": "^3.4.3",
-    "vue-template-compiler": "^2.6.10"
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-typescript": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "sass": "^1.26.3",
+    "sass-loader": "^7.3.1",
+    "typescript": "^3.8.3",
+    "vue-template-compiler": "^2.6.11"
   },
   "postcss": {
     "plugins": {

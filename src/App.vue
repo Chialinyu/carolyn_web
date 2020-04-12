@@ -53,7 +53,8 @@ html {
     font-weight: bold;
     color: #868686;
     &.router-link-exact-active {
-      color: #ff8686;
+      // color: #ff8686;
+      color: #c89664;
     }
   }
 
@@ -98,7 +99,7 @@ export default Vue.extend({
 
   mounted: function(){
     this.getHeight();
-    console.log("hi");
+    // console.log("hi");
   },
 
   methods: {

@@ -3,7 +3,7 @@
   <div class="home">
 
 		<div class="avatar">
-			<img alt="profile" src="../assets/logo.png">
+			<img alt="profile" src="../assets/me.png" style="border-radius: 50%">
 			<p> &#10077; Carolyn Yu</p>
 			<p> &#10000; 游佳霖 </p>
 			<p> RA in Innovative User Interface Lab at NTUST.</p>
@@ -21,12 +21,20 @@
 			<br>.<br>.<br>.
 			<p> QAQ </p>
 			<br>
+
 			<h1>Publications</h1>
-			<p> Construction and Optimization of Feature Descriptor based on Dynamic
-				Local Intensity Order Relations of Pixel Group</p>
+
+      <h4> WalkingVibe: Reducing Virtual Reality Sickness and Improving Realism while Walking in VR using Unobtrusive Head-mounted Vibrotactile Feedback </h4>
+			Yi-Hao Peng, <b>Carolyn Yu</b>, Shi-Hong Liu, Chung-Wei Wang, Paul Taele, Neng-Hao Yu, and Mike Y. Chen
+			<p>CHI 2020 <a href="https://www.yihaopeng.tw/pdf/CHI20_WalkingVibe_preprint.pdf"> [PDF] </a> </p>
+
+      <h4> BusMyFriend: Designing a Bus Reservation Service for People with Visual Impairments in Taipei City </h4>
+			<b>Carolyn Yu</b>, Yee Li, Tsai-Yuan Huang, Wei-An Hsieh, Shao-Yu Lee, I-Hui Yeh, Gang Ku Lin, Neng-Hao Yu, Hsien-Hui Tang, and Yung-Ju Chang
+			<p>DIS Pwip 2020 <a href="#"> [PDF] </a> </p>
+
+			<h4> Construction and Optimization of Feature Descriptor based on Dynamic Local Intensity Order Relations of Pixel Group</h4>
 			Wen-Hung Liao, <b>Carolyn Yu</b>, and Yi-Chieh Wu
-			<p>ICIAR 2019 <a href="#"> [PDF] </a> </p>
-			<br>
+			<p>ICIAR 2019 <a href="https://doi.org/10.1007/978-3-030-27202-9_33"> [PDF] </a> </p>
 
 			<h1>Education</h1>
 			<p> M.S., Computer Science 2017</p>
@@ -60,7 +68,7 @@
     overflow: auto;
 
     img {
-      width: 150px;
+      width: 200px;
     }
   }
   .info {
@@ -71,7 +79,8 @@
     overflow: auto;
 
     a {
-      color: #ff8686;
+      // color: #ff8686;
+      color: #c89664;
       text-decoration: none;
     }
     a:hover {
