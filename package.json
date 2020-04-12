@@ -9,6 +9,8 @@
     "deploy": "ssh -tt root@45.76.221.101 'sudo rm -r /var/www/html' && scp -r ./dist root@45.76.221.101:/var/www/html"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.11.0",
     "core-js": "^2.6.11",
     "vue": "^2.6.11",
     "vue-material": "^1.0.0-beta-11",
